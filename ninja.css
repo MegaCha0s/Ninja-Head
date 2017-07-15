@@ -1,0 +1,84 @@
+body{
+        background: #4D4D4D;
+      }
+
+      .pink-guy{
+        background: black;
+        box-shadow: -18px 29px 0 0 #3C3C3C;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 242px;
+        height: 255px;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+
+      .face{
+        background: #FDE2D3;
+        width: 178px;
+        height: 105px;
+        border-radius: 100%;
+        margin-top: 48px;
+        margin-left: 30px;
+        z-index: 2;
+        position: absolute;
+      }
+
+      .eyes{
+        position: absolute;
+        z-index: 3;
+        top: 105px;
+        left: 50%;
+        transform: translate(-50%,0%);
+        display: flex;
+      }
+      .eyes::before, .eyes::after {
+        display: block;
+        content: '';
+        width: 25px;
+        height: 35px;
+        background: black;
+        border-radius: 100%;
+        margin: 0 40px;
+      }
+      .whites{
+        position: absolute;
+        z-index: 4;
+        top: 122px;
+        left: 50%;
+        margin-left: 3px;
+        transform: translate(-50%,0%);
+        display: flex;
+      }
+      .whites::before, .whites::after{
+        display: block;
+        content: '';
+        width: 8px;
+        height: 12px;
+        background: white;
+        border-radius: 100%;
+        margin: 0 48px;
+      }
+      .brows {
+        position: absolute;
+        z-index: 4;
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+      }
+      .brows::before, .brows::after {
+        display: block;
+        content: '';
+        width: 28px;
+        height: 11px;
+        background: #373737;
+        border-radius: 60px;
+        margin: 0 46px;
+        transform: rotate(7deg);
+      }
+      .brows::before {
+        transform: rotate(-7deg);
+      }
